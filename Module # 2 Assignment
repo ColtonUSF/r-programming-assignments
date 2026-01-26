@@ -1,0 +1,11 @@
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+myMean <- function(assignment2) {
+  return(sum(assignment) / length(someData))
+}
+# When the above code is run in RStudio, I am met with the error code "Error in myMean(): object 'assignment' not found."
+# The reason for this is that when creating the "myMean" function, "assignment" was used instead of "assignment2" and the "someData" variable does not even exist.
+# Here is the correct code for the function 
+myMean <- function(assignment2) {
+  return(sum(assignment2) / length(assignment2))
+}
+# The function now returns 19.25 in the console
